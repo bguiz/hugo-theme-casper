@@ -30,8 +30,8 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{.Site.BaseURL}}images/favicon.ico">
-	  <link rel="apple-touch-icon" href="{{.Site.BaseURL}}images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="{{.Site.BaseURL}}{{ if .Site.Params.favicon }}{{ .Site.Params.favicon }}{{ else }}images/favicon.ico{{ end }}">
+    <link rel="apple-touch-icon" href="{{.Site.BaseURL}}{{ if .Site.Params.appleTouchIcon }}{{ .Site.Params.appleTouchIcon }}{{ else }}images/apple-touch-icon.png{{end}}" />
 
     <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/screen.css" />
     <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/nav.css" />
